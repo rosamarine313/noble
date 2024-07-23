@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  /* 맑은고딕/13px/#666 */
+  font-family: 맑은고딕;
+  font-size: 13px;
+  color: #666;
+}
+
+/*---------------------- header-------- */
+#header {
+  /* <!-- 배경색/높이/글자가운데 --> */
+  background-color: rgb(239, 203, 124);
+  height: 120px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 35px;
+}
+
+#gnb_wrap {
+  background-color: black;
+  color: rgb(239, 203, 124);
+}
+
+.gnb {
+  /* <!-- 가운데/플랙스 --> */
+  margin: 0 auto;
+  width: 1180px;
+  display: flex;
+  justify-content: center;
+}
+
+.gnb li a {
+  display: block;
+  padding: 22px 40px 22px 40px;
+}
+
+.gnb li a:hover {
+  background: url(../images/gnb_on.png) no-repeat center top 0;
+}
+
+/* banner */
+#banner {
+  background: url(../images/mb.png) no-repeat center;
+  height: 815px;
+}
+
+/* section1 */
+#section1 {
+  margin: 0 auto;
+  width: 1180px;
+  text-align: center;
+}
+
+#section1 h2 {
+  padding-top: 80px;
+  font-size: 25px;
+}
+
+#section1 .slogun {
+  font-size: 20px;
+  padding: 30px 0 50px 0;
+}
+
+.bn_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bn_list li {
+  width: 30%;
+  border: #666 solid 1px;
+}
+
+.bn_list li a {
+  display: block;
+}
+
+.bn_list li a .img_wrap {
+  overflow: hidden;
+  height: 340px;
+}
+
+.bn_list li a .img_wrap img {
+  transform: scale(1);
+  transition: all 1s;
+}
+
+.bn_list li a .img_wrap img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.bn_list li a p {
+  padding: 30px;
+}
+
+/* section2 */
+#section2 {
+  margin-top: 100px;
+  background-image: url(../images/s1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 850px;
+  animation: slide 15s infinite linear;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(../images/s1.jpg);
+  }
+
+  20% {
+    background-image: url(../images/s2.jpg);
+  }
+
+  40% {
+    background-image: url(../images/s3.jpg);
+  }
+
+  60% {
+    background-image: url(../images/s4.jpg);
+  }
+
+  80% {
+    background-image: url(../images/s5.jpg);
+  }
+
+  100% {
+    background-image: url(../images/s1.jpg);
+  }
+}
+
+#section2 h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
+  padding-top: 380px;
+  margin-bottom: 30px;
+}
+
+#section2 p {
+  font-size: 20px;
+}
+
+/* section3 */
+#section3 {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/* section4 */
+#section4 {
+  text-align: center;
+  background: url(../images/bg.jpg) no-repeat center;
+  height: 900px;
+}
+
+#section4 iframe {
+  padding-top: 120px;
+}
+
+/*------------------ footer------------ */
+#footer_wrap {
+  background-color: #434343;
+  height: 120px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 1180px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  color: rgb(205, 205, 205);
+}
